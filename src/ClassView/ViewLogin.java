@@ -5,16 +5,12 @@
  */
 package ClassView;
 
-import ClassBeans.UsuariosBeans;
-import ClassDao.ValidaAcessoDAL;
 import ConnectionClass.ConnectionFactor;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -26,7 +22,7 @@ public class ViewLogin extends javax.swing.JFrame {
     public String Acesso;
 
     /**
-     * Creates new form TelaLogin
+     * 
      */
     public ViewLogin() {
 
@@ -154,7 +150,7 @@ public class ViewLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
-        dispose();
+         System.exit(0);
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnNovoUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNovoUserActionPerformed
@@ -179,7 +175,7 @@ public class ViewLogin extends javax.swing.JFrame {
                 princ.setVisible(true);
             }
         } else {
-            JOptionPane.showMessageDialog(rootPane, "Acesso negado ! \n Voce nao possue autoriçao !");
+            JOptionPane.showMessageDialog(rootPane, "Usuário ou senha incorretos, Ou você não tem permissão de acesso ! \n Entre em contato com o administrador para solicitar acesso!");
         }
 
     }//GEN-LAST:event_btnAcessarActionPerformed

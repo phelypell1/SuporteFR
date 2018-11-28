@@ -41,6 +41,11 @@ public class DepartamentoBeans {
     public void setNome_dep(String nome_dep) {
         this.nome_dep = nome_dep;
     }
+
+    @Override
+    public String toString() {
+        return getNome_dep();
+    }
     
     
     

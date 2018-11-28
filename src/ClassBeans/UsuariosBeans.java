@@ -70,6 +70,11 @@ public class UsuariosBeans {
     public void setData_criacao(String data_criacao) {
         this.data_criacao = data_criacao;
     }
+
+    @Override
+    public String toString() {
+        return getNome_user();
+    }
     
     
 }

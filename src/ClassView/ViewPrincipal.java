@@ -63,7 +63,7 @@ public class ViewPrincipal extends javax.swing.JFrame {
         jMenuItem6.setText("OS Fechadas");
         jMenu1.add(jMenuItem6);
 
-        jMenuItem7.setText("Relatorio");
+        jMenuItem7.setText("Relatórios");
         jMenu1.add(jMenuItem7);
 
         jMenuBar1.add(jMenu1);

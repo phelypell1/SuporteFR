@@ -29,7 +29,7 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Relatorio"/>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rios"/>
               </Properties>
             </MenuItem>
           </SubComponents>

@@ -5,7 +5,10 @@
  */
 package ClassView;
 
+import ClassBeans.UsuariosBeans;
 import java.awt.Color;
+import java.awt.Container;
+import javax.swing.JLabel;
 
 /**
  *
@@ -17,7 +20,12 @@ public class ViewPrincipal extends javax.swing.JFrame {
      * Creates new form ViewPrincipal
      */
     public ViewPrincipal() {
+        ViewLogin pi = new ViewLogin();
+        UsuariosBeans user = new UsuariosBeans();
         initComponents();
+        Container c = getContentPane();
+         String usuario = System.getProperty("Usuario: ","");
+         c.add(new JLabel(usuario));
         getContentPane().setBackground(Color.lightGray);
     }
 
@@ -30,55 +38,66 @@ public class ViewPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setBackground(new java.awt.Color(254, 254, 254));
-        jButton1.setFont(new java.awt.Font("Open Sans Extrabold", 1, 14)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon("/home/devops/Downloads/relatorio (1).png")); // NOI18N
-        jButton1.setText("Nova OS");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/relatorio (3).png"))); // NOI18N
+        jMenu1.setText("Centro de Serviços");
 
-        jButton2.setBackground(new java.awt.Color(255, 250, 250));
-        jButton2.setFont(new java.awt.Font("Open Sans Extrabold", 0, 14)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/ico-Controle-de-Estoque.png"))); // NOI18N
-        jButton2.setText("Estoque");
+        jMenuItem4.setText("Nova OS");
+        jMenu1.add(jMenuItem4);
+
+        jMenuItem5.setText("OS Abertas");
+        jMenu1.add(jMenuItem5);
+
+        jMenuItem6.setText("OS Fechadas");
+        jMenu1.add(jMenuItem6);
+
+        jMenuItem7.setText("Relatorio");
+        jMenu1.add(jMenuItem7);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/controle-de-estoque.png"))); // NOI18N
+        jMenu2.setText("Estoque");
+
+        jMenuItem1.setText("Produtos");
+        jMenu2.add(jMenuItem1);
+
+        jMenuItem2.setText("novos produtos");
+        jMenu2.add(jMenuItem2);
+
+        jMenuItem3.setText("Consulta");
+        jMenu2.add(jMenuItem3);
+
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(564, Short.MAX_VALUE))
+            .addGap(0, 698, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jButton1)
-                .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addContainerGap(243, Short.MAX_VALUE))
+            .addGap(0, 354, Short.MAX_VALUE)
         );
 
         setSize(new java.awt.Dimension(708, 405));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    
-     
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -116,7 +135,15 @@ public class ViewPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
     // End of variables declaration//GEN-END:variables
 }

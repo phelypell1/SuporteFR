@@ -10,9 +10,9 @@ import javax.swing.JOptionPane;
 public class ConnectionFactor {
 
     private static final String DRIVER = "com.mysql.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://127.0.0.1:3306/BancoDadosFr";
-    private static final String USER = "root";
-    private static final String PASS = "Fw38q1V7sN";
+    private static final String URL = "jdbc:mysql://127.0.0.1:3306/SuporteFR";
+    private static final String USER = "admin";
+    private static final String PASS = "X01nn@h77M";
     public ResultSet rs;
     public PreparedStatement stmt;
 

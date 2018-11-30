@@ -49,12 +49,15 @@ public class ViewPrincipal extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/relatorio (3).png"))); // NOI18N
         jMenu1.setText("Centro de Serviços");
 
         jMenuItem4.setText("Nova OS");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem4);
 
         jMenuItem5.setText("OS Abertas");
@@ -98,6 +101,11 @@ public class ViewPrincipal extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(708, 405));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        ViewNovaOS novaos = new ViewNovaOS();
+        novaos.setVisible(true);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments

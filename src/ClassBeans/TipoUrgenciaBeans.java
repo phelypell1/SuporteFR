@@ -55,6 +55,9 @@ public class TipoUrgenciaBeans {
     public void setCor_urg(String cor_urg) {
         this.cor_urg = cor_urg;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return getNome_urg();
+    }
 }

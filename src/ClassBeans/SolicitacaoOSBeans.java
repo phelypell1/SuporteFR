@@ -5,6 +5,8 @@
  */
 package ClassBeans;
 
+import java.sql.Timestamp;
+
 /**
  *
  * @author devops
@@ -17,6 +19,7 @@ public class SolicitacaoOSBeans {
     private String info_sol;
     private TipoUrgenciaBeans urg_id;
     private String data_sol;
+    private StatusBeans sts_id;
 
     /**
      * @return the id_solicitacao
@@ -115,6 +118,18 @@ public class SolicitacaoOSBeans {
     public void setData_sol(String data_sol) {
         this.data_sol = data_sol;
     }
-    
-    
+
+    /**
+     * @return the sts_id
+     */
+    public StatusBeans getSts_id() {
+        return sts_id;
+    }
+
+    /**
+     * @param sts_id the sts_id to set
+     */
+    public void setSts_id(StatusBeans sts_id) {
+        this.sts_id = sts_id;
+    }
 }
